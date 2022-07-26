@@ -6,12 +6,12 @@ import java.util.Scanner;
 import com.bridgelabz.EmployeePayrollService.IOService;
 
 public class EmployeePayrollServiceMain {
-    public static void main(String[] args) {
+	public static void main(String[] args) {
 
-        ArrayList<EmployeePayrollData> employeePayrollList = new ArrayList<>();
-        EmployeePayrollService employeePayrollService = new EmployeePayrollService(employeePayrollList);
-        Scanner consoleInputReader = new Scanner(System.in);
-        employeePayrollService.readEmployeePayrollData(consoleInputReader);
-        employeePayrollService.writeEmployeePayrollData(IOService.CONSOLE_IO);
-    }
+		ArrayList<EmployeePayrollData> employeePayrollList = new ArrayList<>();
+		EmployeePayrollService employeePayrollService = new EmployeePayrollService(employeePayrollList);
+		Scanner consoleInputReader = new Scanner(System.in);
+		employeePayrollService.readEmployeePayrollData(consoleInputReader);
+		employeePayrollService.writeEmployeePayrollData(IOService.CONSOLE_IO);
+	}
 }
