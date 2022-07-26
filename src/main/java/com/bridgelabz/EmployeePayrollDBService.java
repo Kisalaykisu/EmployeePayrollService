@@ -11,6 +11,9 @@ import java.util.List;
 
 
 public class EmployeePayrollDBService {
+    public static List<EmployeePayrollData> getEmployeePayrollData(String name) {
+    }
+
     private Connection getConnection() throws SQLException {
         String jdbcURL = "jdbc:mysql://localhost:3306/payroll_service?useSSL=false";
         String userName = "root";
@@ -42,4 +45,5 @@ public class EmployeePayrollDBService {
         }
         return employeePayrollList;
     }
+
 }
